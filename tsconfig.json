@@ -1,17 +1,17 @@
 {
-	"extends": "@sindresorhus/tsconfig",
-	"compilerOptions": {
-		"outDir": "dist",
-		"baseUrl": ".",
-		"paths": {
-			"@/*": ["./source/*"],
-			"@components/*": ["./source/components/*"],
-			"@models/*": ["./source/models/*"],
-			"@hooks/*": ["./source/hooks/*"],
-			"@utils/*": ["./source/utils/*"],
-			"@constants/*": ["./source/constants/*"],
-			"@plop-files/*": ["./source/plop-files/*"],
-		}
-	},
-	"include": ["source"]
+  "extends": "@sindresorhus/tsconfig",
+  "compilerOptions": {
+    "outDir": "dist",
+    "baseUrl": ".",
+    "paths": {
+      "@/*": ["./source/*"],
+      "@components/*": ["./source/components/*"],
+      "@models/*": ["./source/models/*"],
+      "@hooks/*": ["./source/hooks/*"],
+      "@utils/*": ["./source/utils/*"],
+      "@constants/*": ["./source/constants/*"],
+      "@plop-files/*": ["./source/plop-files/*"]
+    }
+  },
+  "include": ["source"]
 }

@@ -74103,17 +74103,19 @@ __nccwpck_require__.a(__webpack_module__, async (__webpack_handle_async_dependen
 /* harmony import */ var _components_steps_FolderAtomicInput_js__WEBPACK_IMPORTED_MODULE_6__ = __nccwpck_require__(30674);
 /* harmony import */ var _components_steps_FolderPageInput_js__WEBPACK_IMPORTED_MODULE_7__ = __nccwpck_require__(85052);
 /* harmony import */ var _components_steps_HttpInput_js__WEBPACK_IMPORTED_MODULE_8__ = __nccwpck_require__(50217);
-/* harmony import */ var _components_steps_NameInput_js__WEBPACK_IMPORTED_MODULE_9__ = __nccwpck_require__(38836);
-/* harmony import */ var _components_steps_NewAction_js__WEBPACK_IMPORTED_MODULE_10__ = __nccwpck_require__(61905);
-/* harmony import */ var _components_steps_StateInput_js__WEBPACK_IMPORTED_MODULE_11__ = __nccwpck_require__(58198);
-/* harmony import */ var _components_steps_TypeInput_js__WEBPACK_IMPORTED_MODULE_12__ = __nccwpck_require__(84417);
-/* harmony import */ var _plop_files_setup_plop_js__WEBPACK_IMPORTED_MODULE_13__ = __nccwpck_require__(44255);
-var __webpack_async_dependencies__ = __webpack_handle_async_dependencies__([ink__WEBPACK_IMPORTED_MODULE_2__, _components_partials_Summary_js__WEBPACK_IMPORTED_MODULE_5__, _components_steps_FolderAtomicInput_js__WEBPACK_IMPORTED_MODULE_6__, _components_steps_FolderPageInput_js__WEBPACK_IMPORTED_MODULE_7__, _components_steps_HttpInput_js__WEBPACK_IMPORTED_MODULE_8__, _components_steps_NameInput_js__WEBPACK_IMPORTED_MODULE_9__, _components_steps_NewAction_js__WEBPACK_IMPORTED_MODULE_10__, _components_steps_StateInput_js__WEBPACK_IMPORTED_MODULE_11__, _components_steps_TypeInput_js__WEBPACK_IMPORTED_MODULE_12__]);
-([ink__WEBPACK_IMPORTED_MODULE_2__, _components_partials_Summary_js__WEBPACK_IMPORTED_MODULE_5__, _components_steps_FolderAtomicInput_js__WEBPACK_IMPORTED_MODULE_6__, _components_steps_FolderPageInput_js__WEBPACK_IMPORTED_MODULE_7__, _components_steps_HttpInput_js__WEBPACK_IMPORTED_MODULE_8__, _components_steps_NameInput_js__WEBPACK_IMPORTED_MODULE_9__, _components_steps_NewAction_js__WEBPACK_IMPORTED_MODULE_10__, _components_steps_StateInput_js__WEBPACK_IMPORTED_MODULE_11__, _components_steps_TypeInput_js__WEBPACK_IMPORTED_MODULE_12__] = __webpack_async_dependencies__.then ? (await __webpack_async_dependencies__)() : __webpack_async_dependencies__);
+/* harmony import */ var _components_steps_MockSetup_js__WEBPACK_IMPORTED_MODULE_9__ = __nccwpck_require__(96546);
+/* harmony import */ var _components_steps_NameInput_js__WEBPACK_IMPORTED_MODULE_10__ = __nccwpck_require__(38836);
+/* harmony import */ var _components_steps_NewAction_js__WEBPACK_IMPORTED_MODULE_11__ = __nccwpck_require__(61905);
+/* harmony import */ var _components_steps_StateInput_js__WEBPACK_IMPORTED_MODULE_12__ = __nccwpck_require__(58198);
+/* harmony import */ var _components_steps_TypeInput_js__WEBPACK_IMPORTED_MODULE_13__ = __nccwpck_require__(84417);
+/* harmony import */ var _plop_files_setup_plop_js__WEBPACK_IMPORTED_MODULE_14__ = __nccwpck_require__(44255);
+var __webpack_async_dependencies__ = __webpack_handle_async_dependencies__([ink__WEBPACK_IMPORTED_MODULE_2__, _components_partials_Summary_js__WEBPACK_IMPORTED_MODULE_5__, _components_steps_FolderAtomicInput_js__WEBPACK_IMPORTED_MODULE_6__, _components_steps_FolderPageInput_js__WEBPACK_IMPORTED_MODULE_7__, _components_steps_HttpInput_js__WEBPACK_IMPORTED_MODULE_8__, _components_steps_MockSetup_js__WEBPACK_IMPORTED_MODULE_9__, _components_steps_NameInput_js__WEBPACK_IMPORTED_MODULE_10__, _components_steps_NewAction_js__WEBPACK_IMPORTED_MODULE_11__, _components_steps_StateInput_js__WEBPACK_IMPORTED_MODULE_12__, _components_steps_TypeInput_js__WEBPACK_IMPORTED_MODULE_13__]);
+([ink__WEBPACK_IMPORTED_MODULE_2__, _components_partials_Summary_js__WEBPACK_IMPORTED_MODULE_5__, _components_steps_FolderAtomicInput_js__WEBPACK_IMPORTED_MODULE_6__, _components_steps_FolderPageInput_js__WEBPACK_IMPORTED_MODULE_7__, _components_steps_HttpInput_js__WEBPACK_IMPORTED_MODULE_8__, _components_steps_MockSetup_js__WEBPACK_IMPORTED_MODULE_9__, _components_steps_NameInput_js__WEBPACK_IMPORTED_MODULE_10__, _components_steps_NewAction_js__WEBPACK_IMPORTED_MODULE_11__, _components_steps_StateInput_js__WEBPACK_IMPORTED_MODULE_12__, _components_steps_TypeInput_js__WEBPACK_IMPORTED_MODULE_13__] = __webpack_async_dependencies__.then ? (await __webpack_async_dependencies__)() : __webpack_async_dependencies__);
 
 
 
  // Importa node-plop para usar la funcionalidad de generación
+
 
 
 
@@ -74163,7 +74165,7 @@ const App = () => {
         else {
             const updatedData = { ...data, [key]: value };
             const plop = await (0,node_plop__WEBPACK_IMPORTED_MODULE_3__/* ["default"] */ .A)();
-            (0,_plop_files_setup_plop_js__WEBPACK_IMPORTED_MODULE_13__/* .setupPlop */ .X)(plop);
+            (0,_plop_files_setup_plop_js__WEBPACK_IMPORTED_MODULE_14__/* .setupPlop */ .X)(plop);
             const generator = plop.getGenerator('crear');
             const { changes, failures } = await generator.runActions(updatedData);
             const warnings = failures.filter(_utils_functions_js__WEBPACK_IMPORTED_MODULE_0__/* .isWarning */ .Vv);
@@ -74197,12 +74199,13 @@ const App = () => {
     };
     return (react__WEBPACK_IMPORTED_MODULE_4__.createElement(ink__WEBPACK_IMPORTED_MODULE_2__/* .Box */ .az, { flexDirection: 'column' },
         react__WEBPACK_IMPORTED_MODULE_4__.createElement(_components_partials_Summary_js__WEBPACK_IMPORTED_MODULE_5__/* ["default"] */ .A, { dataList: dataList, data: data }),
-        step === 'type' && react__WEBPACK_IMPORTED_MODULE_4__.createElement(_components_steps_TypeInput_js__WEBPACK_IMPORTED_MODULE_12__/* ["default"] */ .A, { next: next }),
-        step === 'name' && react__WEBPACK_IMPORTED_MODULE_4__.createElement(_components_steps_NameInput_js__WEBPACK_IMPORTED_MODULE_9__/* ["default"] */ .A, { next: next, data: data, setData: setData, config: config }),
+        step === 'type' && react__WEBPACK_IMPORTED_MODULE_4__.createElement(_components_steps_TypeInput_js__WEBPACK_IMPORTED_MODULE_13__/* ["default"] */ .A, { next: next }),
+        step === 'name' && react__WEBPACK_IMPORTED_MODULE_4__.createElement(_components_steps_NameInput_js__WEBPACK_IMPORTED_MODULE_10__/* ["default"] */ .A, { next: next, data: data, setData: setData, config: config }),
         step === 'http' && react__WEBPACK_IMPORTED_MODULE_4__.createElement(_components_steps_HttpInput_js__WEBPACK_IMPORTED_MODULE_8__/* ["default"] */ .A, { next: next, data: data }),
-        step === 'state' && react__WEBPACK_IMPORTED_MODULE_4__.createElement(_components_steps_StateInput_js__WEBPACK_IMPORTED_MODULE_11__/* ["default"] */ .A, { next: next }),
+        step === 'state' && react__WEBPACK_IMPORTED_MODULE_4__.createElement(_components_steps_StateInput_js__WEBPACK_IMPORTED_MODULE_12__/* ["default"] */ .A, { next: next }),
         step === 'folder' && renderFolderByType(data?.type || ''),
-        step === 'new' && react__WEBPACK_IMPORTED_MODULE_4__.createElement(_components_steps_NewAction_js__WEBPACK_IMPORTED_MODULE_10__/* ["default"] */ .A, { setStep: setStep })));
+        step === 'new' && react__WEBPACK_IMPORTED_MODULE_4__.createElement(_components_steps_NewAction_js__WEBPACK_IMPORTED_MODULE_11__/* ["default"] */ .A, { setStep: setStep }),
+        step === 'mock-setup' && react__WEBPACK_IMPORTED_MODULE_4__.createElement(_components_steps_MockSetup_js__WEBPACK_IMPORTED_MODULE_9__/* ["default"] */ .A, { setStep: setStep, config: config })));
 };
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (App);
 
@@ -74578,6 +74581,108 @@ __webpack_async_result__();
 
 /***/ }),
 
+/***/ 96546:
+/***/ ((__webpack_module__, __webpack_exports__, __nccwpck_require__) => {
+
+__nccwpck_require__.a(__webpack_module__, async (__webpack_handle_async_dependencies__, __webpack_async_result__) => { try {
+/* harmony export */ __nccwpck_require__.d(__webpack_exports__, {
+/* harmony export */   A: () => (__WEBPACK_DEFAULT_EXPORT__)
+/* harmony export */ });
+/* harmony import */ var ink__WEBPACK_IMPORTED_MODULE_0__ = __nccwpck_require__(48518);
+/* harmony import */ var ink_select_input__WEBPACK_IMPORTED_MODULE_1__ = __nccwpck_require__(18502);
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_2__ = __nccwpck_require__(47919);
+/* harmony import */ var ink_spinner__WEBPACK_IMPORTED_MODULE_3__ = __nccwpck_require__(68078);
+/* harmony import */ var _utils_mock_setup_js__WEBPACK_IMPORTED_MODULE_4__ = __nccwpck_require__(32702);
+var __webpack_async_dependencies__ = __webpack_handle_async_dependencies__([ink__WEBPACK_IMPORTED_MODULE_0__, ink_select_input__WEBPACK_IMPORTED_MODULE_1__, ink_spinner__WEBPACK_IMPORTED_MODULE_3__]);
+([ink__WEBPACK_IMPORTED_MODULE_0__, ink_select_input__WEBPACK_IMPORTED_MODULE_1__, ink_spinner__WEBPACK_IMPORTED_MODULE_3__] = __webpack_async_dependencies__.then ? (await __webpack_async_dependencies__)() : __webpack_async_dependencies__);
+
+
+
+
+
+const MockSetup = ({ setStep, config }) => {
+    const [isSettingUp, setIsSettingUp] = (0,react__WEBPACK_IMPORTED_MODULE_2__.useState)(false);
+    const [setupComplete, setSetupComplete] = (0,react__WEBPACK_IMPORTED_MODULE_2__.useState)(false);
+    const [error, setError] = (0,react__WEBPACK_IMPORTED_MODULE_2__.useState)(null);
+    const mockOptions = [
+        { label: '✅ Setup Mocks', value: 'setup' },
+        { label: '🔙 Back', value: 'back' }
+    ];
+    const handleMockSetup = async () => {
+        try {
+            setIsSettingUp(true);
+            setError(null);
+            // Verificar si los mocks están habilitados en la configuración
+            if (!config?.services?.mocks?.enabled) {
+                setError('Mocks are not enabled in compilot.config.json');
+                setIsSettingUp(false);
+                return;
+            }
+            // Ejecutar la configuración de mocks
+            await (0,_utils_mock_setup_js__WEBPACK_IMPORTED_MODULE_4__/* .setupMocks */ .f)(config.services.mocks);
+            setSetupComplete(true);
+            setIsSettingUp(false);
+            // Después de 2 segundos, volver al menú principal
+            setTimeout(() => {
+                setStep('new');
+            }, 2000);
+        }
+        catch (err) {
+            setError(`Error setting up mocks: ${err instanceof Error ? err.message : String(err)}`);
+            setIsSettingUp(false);
+        }
+    };
+    if (isSettingUp) {
+        return (react__WEBPACK_IMPORTED_MODULE_2__.createElement(ink__WEBPACK_IMPORTED_MODULE_0__/* .Box */ .az, { flexDirection: "column" },
+            react__WEBPACK_IMPORTED_MODULE_2__.createElement(ink__WEBPACK_IMPORTED_MODULE_0__/* .Box */ .az, null,
+                react__WEBPACK_IMPORTED_MODULE_2__.createElement(ink_spinner__WEBPACK_IMPORTED_MODULE_3__/* ["default"] */ .A, { type: "dots" }),
+                react__WEBPACK_IMPORTED_MODULE_2__.createElement(ink__WEBPACK_IMPORTED_MODULE_0__/* .Text */ .EY, null, " Setting up mocks..."))));
+    }
+    if (setupComplete) {
+        return (react__WEBPACK_IMPORTED_MODULE_2__.createElement(ink__WEBPACK_IMPORTED_MODULE_0__/* .Box */ .az, { flexDirection: "column" },
+            react__WEBPACK_IMPORTED_MODULE_2__.createElement(ink__WEBPACK_IMPORTED_MODULE_0__/* .Text */ .EY, { color: "green" }, "\u2705 Mocks setup completed successfully!"),
+            react__WEBPACK_IMPORTED_MODULE_2__.createElement(ink__WEBPACK_IMPORTED_MODULE_0__/* .Text */ .EY, { color: "gray" }, "Returning to main menu...")));
+    }
+    if (error) {
+        return (react__WEBPACK_IMPORTED_MODULE_2__.createElement(ink__WEBPACK_IMPORTED_MODULE_0__/* .Box */ .az, { flexDirection: "column" },
+            react__WEBPACK_IMPORTED_MODULE_2__.createElement(ink__WEBPACK_IMPORTED_MODULE_0__/* .Text */ .EY, { color: "red" },
+                "\u274C ",
+                error),
+            react__WEBPACK_IMPORTED_MODULE_2__.createElement(ink__WEBPACK_IMPORTED_MODULE_0__/* .Text */ .EY, { color: "gray" }, "Press any key to continue..."),
+            react__WEBPACK_IMPORTED_MODULE_2__.createElement(ink_select_input__WEBPACK_IMPORTED_MODULE_1__/* ["default"] */ .Ay, { items: [{ label: '🔙 Back to menu', value: 'back' }], onSelect: () => setStep('new') })));
+    }
+    return (react__WEBPACK_IMPORTED_MODULE_2__.createElement(ink__WEBPACK_IMPORTED_MODULE_0__/* .Box */ .az, { flexDirection: "column" },
+        react__WEBPACK_IMPORTED_MODULE_2__.createElement(ink__WEBPACK_IMPORTED_MODULE_0__/* .Text */ .EY, null, "\uD83C\uDFAD Mock Setup"),
+        react__WEBPACK_IMPORTED_MODULE_2__.createElement(ink__WEBPACK_IMPORTED_MODULE_0__/* .Text */ .EY, { color: "gray" }, "This will configure mocks for your project based on your compilot.config.json settings."),
+        react__WEBPACK_IMPORTED_MODULE_2__.createElement(ink__WEBPACK_IMPORTED_MODULE_0__/* .Text */ .EY, { color: "gray" },
+            "Current status: ",
+            config?.services?.mocks?.enabled ? 'Enabled' : 'Disabled'),
+        react__WEBPACK_IMPORTED_MODULE_2__.createElement(ink_select_input__WEBPACK_IMPORTED_MODULE_1__/* ["default"] */ .Ay, { items: mockOptions, indicatorComponent: ({ isSelected }) => {
+                if (isSelected) {
+                    return react__WEBPACK_IMPORTED_MODULE_2__.createElement(ink__WEBPACK_IMPORTED_MODULE_0__/* .Text */ .EY, { color: 'red' }, '\u2192 ');
+                }
+                return react__WEBPACK_IMPORTED_MODULE_2__.createElement(ink__WEBPACK_IMPORTED_MODULE_0__/* .Text */ .EY, null, '  ');
+            }, itemComponent: ({ isSelected, label }) => {
+                if (isSelected) {
+                    return react__WEBPACK_IMPORTED_MODULE_2__.createElement(ink__WEBPACK_IMPORTED_MODULE_0__/* .Text */ .EY, { color: 'red' }, label);
+                }
+                return react__WEBPACK_IMPORTED_MODULE_2__.createElement(ink__WEBPACK_IMPORTED_MODULE_0__/* .Text */ .EY, { color: 'white' }, label);
+            }, onSelect: (item) => {
+                if (item.value === 'setup') {
+                    handleMockSetup();
+                }
+                else if (item.value === 'back') {
+                    setStep('new');
+                }
+            } })));
+};
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (MockSetup);
+
+__webpack_async_result__();
+} catch(e) { __webpack_async_result__(e); } });
+
+/***/ }),
+
 /***/ 38836:
 /***/ ((__webpack_module__, __webpack_exports__, __nccwpck_require__) => {
 
@@ -74675,6 +74780,9 @@ const NewAction = ({ setStep }) => {
             }, onSelect: (item) => {
                 if (item.value === 'exit') {
                     exit();
+                }
+                else if (item.value === 'setup-mocks') {
+                    setStep('mock-setup');
                 }
                 else {
                     setStep('type');
@@ -74801,6 +74909,7 @@ const componentTypes = [
 /* harmony export */ });
 const newActions = [
     { label: '🔁 Create another', value: 'again' },
+    { label: '🎭 Setup Mocks', value: 'setup-mocks' },
     { label: '🚪 Exit', value: 'exit' }
 ];
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (newActions);
@@ -75631,6 +75740,114 @@ const loadConfig = () => {
     return defaultConfig;
 };
 /* harmony default export */ const load_config = (loadConfig);
+
+
+/***/ }),
+
+/***/ 32702:
+/***/ ((__unused_webpack___webpack_module__, __webpack_exports__, __nccwpck_require__) => {
+
+/* harmony export */ __nccwpck_require__.d(__webpack_exports__, {
+/* harmony export */   f: () => (/* binding */ setupMocks)
+/* harmony export */ });
+/* harmony import */ var child_process__WEBPACK_IMPORTED_MODULE_0__ = __nccwpck_require__(35317);
+/* harmony import */ var fs__WEBPACK_IMPORTED_MODULE_1__ = __nccwpck_require__(79896);
+/* harmony import */ var path__WEBPACK_IMPORTED_MODULE_2__ = __nccwpck_require__(16928);
+
+
+
+const setupMocks = async (config) => {
+    if (!config.enabled) {
+        throw new Error('Mocks are not enabled in configuration');
+    }
+    // 1. Crear directorio de datos de mocks si no existe
+    await createMockDirectories(config);
+    // 2. Crear archivos de configuración básicos
+    await createMockFiles(config);
+    // 3. Instalar dependencias si es necesario
+    await installMockDependencies(config);
+    // 4. Configurar el plugin en el archivo de configuración
+    await configureMockPlugin(config);
+};
+const createMockDirectories = async (config) => {
+    const dataDir = path__WEBPACK_IMPORTED_MODULE_2__.resolve(config.data);
+    const serverDir = path__WEBPACK_IMPORTED_MODULE_2__.dirname(path__WEBPACK_IMPORTED_MODULE_2__.resolve(config.server));
+    try {
+        await fs__WEBPACK_IMPORTED_MODULE_1__.promises.mkdir(dataDir, { recursive: true });
+        await fs__WEBPACK_IMPORTED_MODULE_1__.promises.mkdir(serverDir, { recursive: true });
+    }
+    catch (error) {
+        throw new Error(`Failed to create mock directories: ${error}`);
+    }
+};
+const createMockFiles = async (config) => {
+    // Crear archivo de servidor de mocks básico
+    const serverContent = `// Mock server setup
+export default {
+  // Add your mock configurations here
+  '/api/example': {
+    method: 'GET',
+    response: {
+      message: 'Hello from mock server!'
+    }
+  }
+};
+`;
+    // Crear datos de ejemplo
+    const exampleDataContent = `export const exampleData = {
+  users: [
+    { id: 1, name: 'John Doe', email: 'john@example.com' },
+    { id: 2, name: 'Jane Smith', email: 'jane@example.com' }
+  ]
+};
+`;
+    try {
+        await fs__WEBPACK_IMPORTED_MODULE_1__.promises.writeFile(path__WEBPACK_IMPORTED_MODULE_2__.resolve(config.server), serverContent, 'utf8');
+        await fs__WEBPACK_IMPORTED_MODULE_1__.promises.writeFile(path__WEBPACK_IMPORTED_MODULE_2__.join(config.data, 'example.js'), exampleDataContent, 'utf8');
+    }
+    catch (error) {
+        throw new Error(`Failed to create mock files: ${error}`);
+    }
+};
+const installMockDependencies = async (config) => {
+    return new Promise((resolve, reject) => {
+        const npm = (0,child_process__WEBPACK_IMPORTED_MODULE_0__.spawn)('npm', ['install', config.autoSetup.plugin, '--save-dev'], {
+            stdio: 'inherit',
+            shell: true
+        });
+        npm.on('close', (code) => {
+            if (code === 0) {
+                resolve();
+            }
+            else {
+                reject(new Error(`Failed to install ${config.autoSetup.plugin}`));
+            }
+        });
+        npm.on('error', (error) => {
+            reject(new Error(`Failed to spawn npm: ${error.message}`));
+        });
+    });
+};
+const configureMockPlugin = async (config) => {
+    const configPath = path__WEBPACK_IMPORTED_MODULE_2__.resolve(config.autoSetup.configPath);
+    try {
+        // Verificar si el archivo de configuración existe
+        await fs__WEBPACK_IMPORTED_MODULE_1__.promises.access(configPath);
+        // Leer el contenido actual
+        const content = await fs__WEBPACK_IMPORTED_MODULE_1__.promises.readFile(configPath, 'utf8');
+        // Verificar si ya está configurado
+        if (content.includes(config.autoSetup.plugin)) {
+            return; // Ya está configurado
+        }
+        // Agregar configuración básica (esto dependerá del tipo de proyecto)
+        // Por ahora solo mostramos un mensaje
+        console.log(`Please manually add ${config.autoSetup.plugin} to your ${config.autoSetup.configPath}`);
+    }
+    catch (error) {
+        // El archivo no existe o no se puede leer
+        console.log(`Configuration file ${config.autoSetup.configPath} not found. Please create it and add ${config.autoSetup.plugin} configuration.`);
+    }
+};
 
 
 /***/ }),
@@ -78034,6 +78251,47 @@ var __webpack_async_dependencies__ = __webpack_handle_async_dependencies__([_Ind
 
 
 
+//# sourceMappingURL=index.js.map
+__webpack_async_result__();
+} catch(e) { __webpack_async_result__(e); } });
+
+/***/ }),
+
+/***/ 68078:
+/***/ ((__webpack_module__, __webpack_exports__, __nccwpck_require__) => {
+
+__nccwpck_require__.a(__webpack_module__, async (__webpack_handle_async_dependencies__, __webpack_async_result__) => { try {
+/* harmony export */ __nccwpck_require__.d(__webpack_exports__, {
+/* harmony export */   A: () => (__WEBPACK_DEFAULT_EXPORT__)
+/* harmony export */ });
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __nccwpck_require__(47919);
+/* harmony import */ var ink__WEBPACK_IMPORTED_MODULE_1__ = __nccwpck_require__(48518);
+/* harmony import */ var cli_spinners__WEBPACK_IMPORTED_MODULE_2__ = __nccwpck_require__(16487);
+var __webpack_async_dependencies__ = __webpack_handle_async_dependencies__([ink__WEBPACK_IMPORTED_MODULE_1__]);
+ink__WEBPACK_IMPORTED_MODULE_1__ = (__webpack_async_dependencies__.then ? (await __webpack_async_dependencies__)() : __webpack_async_dependencies__)[0];
+
+
+
+/**
+ * Spinner.
+ */
+function Spinner({ type = 'dots' }) {
+    const [frame, setFrame] = (0,react__WEBPACK_IMPORTED_MODULE_0__.useState)(0);
+    const spinner = cli_spinners__WEBPACK_IMPORTED_MODULE_2__[type];
+    (0,react__WEBPACK_IMPORTED_MODULE_0__.useEffect)(() => {
+        const timer = setInterval(() => {
+            setFrame(previousFrame => {
+                const isLastFrame = previousFrame === spinner.frames.length - 1;
+                return isLastFrame ? 0 : previousFrame + 1;
+            });
+        }, spinner.interval);
+        return () => {
+            clearInterval(timer);
+        };
+    }, [spinner]);
+    return react__WEBPACK_IMPORTED_MODULE_0__.createElement(ink__WEBPACK_IMPORTED_MODULE_1__/* .Text */ .EY, null, spinner.frames[frame]);
+}
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (Spinner);
 //# sourceMappingURL=index.js.map
 __webpack_async_result__();
 } catch(e) { __webpack_async_result__(e); } });

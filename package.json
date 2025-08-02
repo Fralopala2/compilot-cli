@@ -17,8 +17,7 @@
     "biome-all": "biome check --write .",
     "biome-staged": "biome check . --write --staged --verbose",
     "pre-commit": "npm run biome-staged && git add -A",
-    "mock:setup": "node -e \"require('./compilot.config.json').services.mocks.autoSetup && require('vite-plugin-mock-simple')\"",
-    "postinstall": "npm run mock:setup"
+    "mock:setup": "node -e \"require('./compilot.config.json').services.mocks.autoSetup && require('vite-plugin-mock-simple')\""
   },
   "files": ["build"],
   "dependencies": {

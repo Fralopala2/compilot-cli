@@ -1,0 +1,25 @@
+{
+  "config": {
+    "language": "javascript"
+  },
+  "pages": {
+    "base": "src/pages",
+    "altBase": "app",
+    "routes": "src/app/Router.tsx",
+    "files": {
+      "types": "file",
+      "lazy": true
+    }
+  },
+  "services": {
+    "mocks": {
+      "enabled": true,
+      "data": "src/mocks/data",
+      "server": "src/mocks/server.js",
+      "autoSetup": {
+        "plugin": "vite-plugin-mock-simple",
+        "configPath": "vite.config.js"
+      }
+    }
+  }
+}

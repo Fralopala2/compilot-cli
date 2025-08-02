@@ -28,6 +28,8 @@ const NewAction: FC<NewActionProps> = ({ setStep }) => {
         onSelect={(item) => {
           if (item.value === 'exit') {
             exit();
+          } else if (item.value === 'setup-mocks') {
+            setStep('mock-setup');
           } else {
             setStep('type');
           }

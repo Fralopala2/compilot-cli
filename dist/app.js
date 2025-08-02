@@ -7,6 +7,7 @@ import Summary from './components/partials/Summary.js';
 import FolderAtomicInput from './components/steps/FolderAtomicInput.js';
 import FolderPageInput from './components/steps/FolderPageInput.js';
 import HttpInput from './components/steps/HttpInput.js';
+import MockSetup from './components/steps/MockSetup.js';
 import NameInput from './components/steps/NameInput.js';
 import NewAction from './components/steps/NewAction.js';
 import StateInput from './components/steps/StateInput.js';
@@ -90,6 +91,7 @@ const App = () => {
         step === 'http' && React.createElement(HttpInput, { next: next, data: data }),
         step === 'state' && React.createElement(StateInput, { next: next }),
         step === 'folder' && renderFolderByType(data?.type || ''),
-        step === 'new' && React.createElement(NewAction, { setStep: setStep })));
+        step === 'new' && React.createElement(NewAction, { setStep: setStep }),
+        step === 'mock-setup' && React.createElement(MockSetup, { setStep: setStep, config: config })));
 };
 export default App;

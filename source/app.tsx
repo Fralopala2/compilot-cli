@@ -8,6 +8,7 @@ import Summary from './components/partials/Summary.js';
 import FolderAtomicInput from './components/steps/FolderAtomicInput.js';
 import FolderPageInput from './components/steps/FolderPageInput.js';
 import HttpInput from './components/steps/HttpInput.js';
+import MockSetup from './components/steps/MockSetup.js';
 import NameInput from './components/steps/NameInput.js';
 import NewAction from './components/steps/NewAction.js';
 import StateInput from './components/steps/StateInput.js';
@@ -32,10 +33,8 @@ const App: FC = () => {
   const [step, setStep] = useState('type');
   const [dataList, setDataList] = useState([] as DataProps[]);
   const [data, setData] = useState<DataProps>(defaultData);
-  // biome-ignore lint/suspicious/noExplicitAny: <explanation>
   const [config, setConfig] = useState(undefined as any);
 
-  // biome-ignore lint/correctness/useExhaustiveDependencies: <explanation>
   useEffect(() => {
     if (!config) {
       const configuration = loadConfig();
@@ -99,6 +98,7 @@ const App: FC = () => {
       {step === 'state' && <StateInput next={next} />}
       {step === 'folder' && renderFolderByType(data?.type || '')}
       {step === 'new' && <NewAction setStep={setStep} />}
+      {step === 'mock-setup' && <MockSetup setStep={setStep} config={config} />}
     </Box>
   );
 };

@@ -21,6 +21,9 @@ const NewAction = ({ setStep }) => {
                 if (item.value === 'exit') {
                     exit();
                 }
+                else if (item.value === 'setup-mocks') {
+                    setStep('mock-setup');
+                }
                 else {
                     setStep('type');
                 }
